@@ -24,6 +24,10 @@ body, html {
     width: 100vw;
 }
 
+body {
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+}
+
 main {
     position: relative;
     height: 100vh;
@@ -58,4 +62,9 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
