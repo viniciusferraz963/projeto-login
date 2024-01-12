@@ -20,17 +20,18 @@
 
 body, html {
     background-color: var(--cor1);
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top,#49a09d, #5f2c82);
 }
 
 main {
     position: relative;
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
 }
 
-#login {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,9 +43,12 @@ main {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 
-#login > #imagem {
+section#login > div#imagem {
     display: block;
     background: url(../imagens/logo.jpg) no-repeat;
     background-size: cover;
@@ -52,7 +56,7 @@ main {
     height: 200px;
 }
 
-#login > #formulario {
+section#login > div#formulario {
     display: block;
     padding: 10px;
 }
